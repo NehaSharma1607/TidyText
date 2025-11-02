@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvGamifyHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎯 Inbox Challenge"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Inbox Score -->
+        <TextView
+            android:id="@+id/tvInboxScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inbox Score: 82/100"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:padding="6dp" />
+
+        <ProgressBar
+            android:id="@+id/progressInboxScore"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="82"
+            android:max="100"
+            android:progressTint="#4CAF50" />
+
+        <!-- Streak Section -->
+        <TextView
+            android:id="@+id/tvStreak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔥 Streak: 4 days clean inbox!"
+            android:textColor="#FF5722"
+            android:paddingTop="10dp"
+            android:textSize="16sp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Daily Goals -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎯 Daily Goals"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:id="@+id/layoutGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <CheckBox
+                android:id="@+id/goalReadMessages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📩 Mark 10 messages as read" />
+
+            <CheckBox
+                android:id="@+id/goalDeleteSpam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚫 Delete 5 spam messages" />
+
+            <CheckBox
+                android:id="@+id/goalCategorizePersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏷️ Categorize 3 personal messages" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginVertical="12dp" />
+
+        <!-- Achievements -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏅 Achievements"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:src="@drawable/ic_trophy"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Trophy" />
+
+            <ImageView
+                android:src="@drawable/ic_star"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="Star" />
+
+            <ImageView
+                android:src="@drawable/ic_medal"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="Medal" />
+        </LinearLayout>
+
+        <!-- Tip of the Day -->
+        <TextView
+            android:id="@+id/tvTipOfDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Tip: Delete old OTPs every 2 days."
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:background="#F5F5F5"
+            android:layout_marginTop="8dp"
+            android:elevation="2dp" />
+
+        <!-- Clean Inbox Button -->
+        <Button
+            android:id="@+id/btnCleanInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧹 Clean Inbox Now"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="14dp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+</ScrollView>

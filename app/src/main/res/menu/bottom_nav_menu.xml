@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_messages"
+        android:icon="@drawable/ic_message"
+        android:title="Messages" />
+
+    <item
+        android:id="@+id/nav_insights"
+        android:icon="@drawable/ic_chart"
+        android:title="Insights" />
+
+    <item
+        android:id="@+id/nav_export"
+        android:icon="@drawable/ic_export"
+        android:title="Export" />
+
+    <item
+        android:id="@+id/nav_gamify"
+        android:icon="@drawable/ic_trophy"
+        android:title="Gamify" />
+</menu>
