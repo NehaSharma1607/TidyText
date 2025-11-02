@@ -71,7 +71,7 @@ The app intelligently filters promotional, transactional, and government message
 ### 2️⃣ Option A: Run via Android Studio
 
 ```bash
-git clone [https://github.com/NehaSharma1607/TidyText]
+git clone https://github.com/NehaSharma1607/TidyText.git
 ```
 
 * Open **Android Studio → File → Open → Select project folder**
